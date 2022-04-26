@@ -1,0 +1,29 @@
+yarn create vite *ARCHIVO* -- --template react
+yarn create vite *ARCHIVO* -- --template vue
+
+templates
+vanilla, vanilla-ts, vue, vue-ts, react, react-ts, preact, preact-ts, lit, lit-ts, svelte, svelte-ts
+
+  cd *ARCHIVO*
+  yarn
+  yarn dev
+
+o 
+
+cd *ARCHIVO*
+npm install
+npm run dev
+
+package.json antes de hacer BUILD
+------------
+  "homepage": ".",
+
+para crear la carpeta dist
+-------------------------
+npm run build
+
+en DIST
+-------
+poner un punto delante de la barra en todos los link en el index.html
+<script type="module" crossorigin src="./assets/index.46fa20d9.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.cd7509fb.js">
